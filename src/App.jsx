@@ -8,8 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 function App() {
-  
-
+  let nom = "Myriam"
   return (
     <>
       <Card style={{ width: '18rem' }}>
@@ -23,6 +22,9 @@ function App() {
         <Button variant="primary"> <Price/></Button>
       </Card.Body>
     </Card>
+    <p>
+      { nom ? "Hello " + nom : "Hello, there !" }
+    </p>
     </>
   )
 }
